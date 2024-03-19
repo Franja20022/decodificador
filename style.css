@@ -1,0 +1,189 @@
+*{
+    background: #F3F5FC;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+}
+
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 5%;
+    position: relative;
+    z-index: 1
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.input{
+    border: none;
+    width: 70%;
+    display: block;
+}
+
+.output{
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    width: 25%;
+    margin-top: -8%;
+    margin-left: 25px;
+}
+
+.area-texto{
+    border: none;
+    color: #000000;
+    text-transform: lowercase;
+    width: 80%;
+    resize: none;
+}
+
+::placeholder{color: #000}
+.area-texto:focus{
+    outline: none;
+}
+
+.informacion{
+    color: #495057;
+    font-size: 20px;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+}
+
+.boton_encript{
+    background-color: darkblue;
+    border: 1px solid darkblue;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    height: 50px;
+    width:100%;
+}
+.boton_desencript{
+    background-color: #d8dfe8;
+    border: 1px solid darkblue;
+    border-radius: 25px;
+    color: darkblue;
+    cursor: pointer;
+    height: 50px;
+    width: 100%;
+    margin-left: 30px;
+}
+
+.mensaje-encript{
+    background: white;
+    background-image: url(/imagenes/imagen_muneco.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 25px;
+    color: darkblue;
+    font-style: italic;
+    margin-left: 30px;
+    width: 80%;
+    height: 60%;
+    resize: none;
+}
+
+.mensaje-encript:focus{
+    outline: none;
+}
+
+.boton-copiar{
+    background-color: white;
+}
+
+.copiar{
+    background-color: #d8dfe8;
+    border: 1px solid darkblue;
+    border-radius: 25px;
+    color: darkblue;
+    cursor: pointer;
+    height: 50px;
+    width: 80%;
+    margin-left: 40px;
+    position: relative; /* Fija la posición relativa del elemento */
+    top: 185px; /* Mueve el elemento 20px hacia abajo desde su posición original */
+    left: 10px; /* Mueve el elemento 10px hacia la derecha desde su posición original */
+}
+
+.mensaje-inicial{
+    background-color: white;
+}
+
+
+.mensaje-inicial h1 {
+    background-color: white;
+    line-height: 1;
+    font-size: 60%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mensaje-inicial p {
+    background-color: white;
+    line-height: 1;
+    font-size: 40%;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 480px) {
+    body {
+        width: 100%; 
+    }
+
+    main {
+        flex-direction: column; 
+        margin: 0px;
+    }
+
+    section {
+        width: 100%; 
+    }
+
+    .input, .output{
+        width: 90%;
+        margin: 10px;  
+    }
+
+    .output{
+        height: 300px
+    }
+
+    .area-texto, .mensaje-encript {
+        background: none;
+        width: 90%;
+        margin-top: 15px;
+    }
+
+    .botones {
+        flex-direction: column; 
+    }
+
+    .boton_encript, .boton_desencript {
+        width: 100%; 
+    }
+
+    .boton_desencript{
+        margin-left: 0%;
+        margin-top: 15px;
+        width: 100%;
+
+    }
+
+    .copiar{
+        position: relative; 
+        top: 225px;
+    }
+
+}
+
