@@ -110,9 +110,9 @@ main{
     height: 50px;
     width: 80%;
     margin-left: 40px;
-    position: relative; /* Fija la posición relativa del elemento */
-    top: 185px; /* Mueve el elemento 20px hacia abajo desde su posición original */
-    left: 10px; /* Mueve el elemento 10px hacia la derecha desde su posición original */
+    position: relative; 
+    top: 185px; 
+    left: 10px; 
 }
 
 .mensaje-inicial{
